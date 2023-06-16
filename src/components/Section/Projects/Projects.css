@@ -110,8 +110,9 @@
 @media screen and (max-width:768px){
 
     .projectsContainer{
-        margin: 0 2rem;
-        box-shadow:0px 10px 1px #000;
+        margin:0 2rem;
+        padding:0 2rem 1rem 2rem;
+        box-shadow:0px 20px 1px #000;
     }
 
     .tituloProjetosWraper{
