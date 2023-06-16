@@ -1,0 +1,34 @@
+.componentCertificateContainer{
+    width: 100%;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.componentCertificateContainer a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #9d00c6;
+}
+
+.componentCertificateContainer h4{
+    color: #cccc;
+    font-family: 'Poppins';
+    font-size: 1.25em;
+    margin: 0.5rem 0;
+}
+
+.componentCertificateContainer h2{
+    margin: 0.5rem 0;
+    font-family: 'Tomorrow';
+    color: #fff;
+    font-weight: normal;
+}
+
+.componentCertificateContainer button{
+    width: 100px;
+}

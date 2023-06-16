@@ -1,0 +1,36 @@
+.logarBotao,
+.sairBotao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    font-size: 2em;
+    margin: 1rem 0;
+    transition: 0.2s;
+    width: 200px;
+}
+
+.logarBotao:hover,
+.sairBotao:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.loadingContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #540261;
+}
+
+.loadingContainer p{
+    font-size: 5em;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Taviraj';
+    text-decoration: underline;
+}

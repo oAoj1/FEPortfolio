@@ -1,0 +1,18 @@
+.editCertificatesContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #2d2c2e ,#02000a );
+    flex-direction: column;
+}
+
+.editCertificatesContainer ul{
+    list-style-type: none;  
+    width: 100%;
+}
+
+.editCertificatesContainer ul li{
+    margin: 1rem auto;
+}

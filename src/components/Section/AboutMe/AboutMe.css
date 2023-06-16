@@ -1,0 +1,103 @@
+.aboutMeWraper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.aboutMeContainer{
+    width: 100%;
+    margin: 0 5rem;
+    padding: 0 5rem 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(-35deg,#e0dede,#fff);
+    border-radius:20px;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+.aboutMeContainer h2{
+    text-align: center;
+    font-family: 'Taviraj';
+}
+
+.aboutMeContainer h2 span{
+    font-size: 5em;
+    border-bottom: 1px solid #540261;
+}
+
+.aboutMeContainer h3{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5em;
+    font-family: 'Neuton';
+    color: #540261;
+}
+
+.aboutInfoContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutMeList{
+    list-style-type: none;
+}
+
+.about{
+    width: 200px;
+    margin: 2rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.about h4{
+    font-size: 2em;
+}
+
+.about span{
+    margin: 2rem 0;
+    font-size: 2em;
+    font-family: 'Neuton';
+    font-weight: lighter;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+
+.about svg{
+    font-size: 4rem;
+    display: flex;
+    margin: auto;
+}
+
+.aboutWraper{
+    margin: 1rem 0;
+}
+
+.aboutMeWraper h5{
+    font-size: 3em;
+    color: #540261;
+}
+
+.aboutMeWraper span{
+    margin: 2rem 0;
+    font-size: 2em;
+    font-family: 'Neuton';
+    font-weight: lighter;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+
+@media screen and (max-width:768px){
+
+    .aboutMeContainer{
+        margin:0 2rem;
+        padding:0 2rem 1rem 2rem;
+    }
+    
+    .aboutMeContainer h2 span{
+        font-size: 3em;
+    }
+
+    .about{
+        margin: 2rem 1rem 1rem 1rem;
+    }
+    
+}

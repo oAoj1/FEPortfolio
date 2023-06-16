@@ -1,0 +1,65 @@
+.footerContent{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #02000a;
+}
+
+.tituloFooter{
+    font-family: 'Source Sans Pro';
+    font-weight: bolder;
+}
+
+.tituloFooter .nome{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #b100cd;
+    transition: 0.2s;
+    font-weight: 300;
+    cursor: default;
+}
+
+.tituloFooter .nome:hover{
+    color: #01ffff;
+}
+
+.tituloFooter .nome svg{
+    font-size: 1em;
+    margin-right: 1rem;
+    transition: 0.2s;
+}
+
+.tituloFooter .nome .negrito{
+    font-weight: 900;
+}
+
+.tituloFooter .nome .ponto{
+    color: #fff;
+    font-weight: bold;
+}
+
+.tituloFooter .nome .joao{
+    margin-right: 0.5rem;
+}
+
+.socialMediasFooter{
+    display: flex;
+    list-style-type: none;
+}
+
+.socialMediasFooter li{
+    margin: 0 1rem;
+}
+
+.socialMediasFooter li a svg{
+    font-size: 2rem;
+    transition: 0.3s;
+    color: #ca00ff;
+    filter: drop-shadow(0px 0px 5px #b100cd);
+}
+
+.socialMediasFooter li a svg:hover{
+    filter:drop-shadow(0px 0px 5px #01ffff);
+}

@@ -1,0 +1,199 @@
+.tituloHardSkills{
+    display: flex;
+    align-items: center;
+}
+
+.tituloSoftSkills{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tituloHardSkills svg,
+.tituloSoftSkills svg{
+    font-size: 2.5em;
+    color: #4c00b0;
+}
+
+.skillsWraper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.skillsContainer{
+    width: 100%;
+    margin: 0 5rem;
+    padding:0 5rem;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(-35deg,#e0dede,#fff);
+    border-radius:20px;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+.rankList{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem 0;
+    background-color: #dedcdc;
+    border-radius: 5px 20px 5px 20px;
+    border: 2px solid #cccc;
+}
+
+.rankList li{
+    padding: 1rem;
+    margin: 0 1rem;
+    text-transform:capitalize;
+    font-size: 2.5em;
+}
+
+.rankList li h5{
+    font-family: 'Neuton';
+}
+
+.rankList li h6{
+    font-family: 'Taviraj';
+}
+
+.titleRank{
+    font-size: 2em;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titleRank svg{
+    font-size: 5rem;
+}
+
+.rankList li:nth-child(1){
+    color: #00ffff;
+}
+
+.rankList li:nth-child(2){
+    color: #13fc03;
+}
+
+.rankList li:nth-child(3){
+    color:#13870b;
+}
+
+.rankList li:nth-child(4){
+    color: #cca112;
+}
+
+.skillsContainer h2{
+    text-align: center;
+    font-size: 5em;
+}
+
+.skillsContainer h2 span{
+    border-bottom: 1px solid #000;
+    font-family: 'Taviraj';
+}
+
+.skillsContainer > h3{
+    margin: 2.5rem 0 0 0;
+    color: #540261;
+    font-size: 1.75em;
+    font-family: 'Neuton';
+    text-align: center;
+}
+
+.hardSkillsContainer,
+.softSkillsContainer{
+    margin: 3rem 0 1rem 0;
+}
+
+.hardSkillsList,
+.softSkillsList{
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.hardSkillsList h5,
+.softSkillsList h5{
+    color: #540261;
+    filter: drop-shadow(0px 0px 5px rgba(202, 0, 255,0.5));
+    font-size: 1.75em;
+    font-family: 'Taviraj';
+}
+
+.hardSkillsList h4,
+.softSkillsList h4{
+    font-style: italic;
+    font-family: 'Neuton';
+    font-size: 2.25em;
+}
+
+.hardSkillsList li,
+.softSkillsList li{
+    width: 220px;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.hardSkillsContainer h3{
+    text-align: left;
+    font-size: 3em;
+}
+
+.hardSkillsList{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hardSkillsList li{
+    margin: 1rem 1rem 1rem 0;
+}
+
+.softSkillsList li{
+    margin: 1rem 0 1rem 1rem;
+}
+
+.softSkillsContainer h3{
+    text-align: right;
+    font-size: 3em;
+}
+
+.softSkillsList{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:768px){
+
+    .skillsContainer{
+        padding: 0 1rem;
+        margin: 0 1rem;
+    }
+
+    .rankList{
+        max-width: 100%;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;    
+    }
+    
+    .softSkillsList,
+    .hardSkillsList{
+        justify-content: center;
+    }
+
+    .hardSkillsList li,
+    .softSkillsList li{
+        width: 350px;
+    }
+
+}

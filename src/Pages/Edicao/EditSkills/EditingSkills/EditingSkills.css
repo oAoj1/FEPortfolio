@@ -1,0 +1,46 @@
+.editingSkillsContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #2d2c2e ,#02000a );
+}
+
+.editingSkillsContainer button{
+    padding: 10px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 1rem 0;
+}
+
+.editingSkillsContainer form{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.3));
+}
+
+.editingSkillsContainer form input{
+    margin: 0.5rem 0;
+    padding: 5px;
+    font-size: 2em;
+    font-family: 'Poppins';
+    border: 0;
+    outline: 0;
+}
+
+.editingSkillsContainer form input::placeholder{
+    font-family: 'Tomorrow';
+}
+
+.editingSkillsContainer form button{
+    transition: 0.3s;
+    border: 0;
+    outline: 0;
+}
+
+.editingSkillsContainer form button:hover{
+    background-color: #0a66c2;
+}

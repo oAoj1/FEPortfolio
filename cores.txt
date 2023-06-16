@@ -1,0 +1,5 @@
+#9d00c6 > roxo
+#0d2173 > azul escuro
+#2d2c2e > cinza escuro
+#02000a > preto
+#01ffff > ciano

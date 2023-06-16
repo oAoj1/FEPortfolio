@@ -1,0 +1,145 @@
+.projectsWraper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+}
+
+.projectsContainer{
+    width: 100%;
+    background-color:#540261;
+    display: flex;
+    justify-content: center;
+    margin: 0 5rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow:30px 20px 1px #000;
+    filter:drop-shadow(0px 0px 5px rgba(0,0,0,0.9));
+}
+
+.tituloProjetosWraper{
+    text-align: center;
+    max-width: 60%;
+}
+
+.tituloProjetosWraper h2{
+    font-size: 5em;
+    color: #fff;
+}
+
+.tituloProjetosWraper h2 span{
+    font-family: 'Taviraj';
+    border-bottom: 1px solid #ccc;
+}
+
+.tituloProjetosWraper h3{
+    color: #cccc;
+    margin: 1rem 0 1.5rem 0;
+    font-family: 'Neuton';
+    font-size: 1.75em;
+    font-weight: normal;
+}
+
+.projectsList{
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectsList li{
+    width: 450px;
+    text-align: center;
+    display: flex;
+    transition: 0.3s;
+    align-items: center;
+    padding: 20px;
+    margin: 1rem;
+    flex-direction: column;
+    background-color: #4c00b0;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.projectsList li:hover{
+    background:#0d2173;
+}
+
+.projectsList li h4{
+    color: #fff;
+    font-family: 'Neuton';
+    font-size: 2.5em;
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.projectsList li h5{
+    max-width: 60%;
+    color: #cccc;
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-top: 0.5rem;
+    font-family: 'Taviraj';
+    font-style: italic;
+}
+
+.projectsList .links{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.projectsList .links a{
+    color: #01ffff;
+    margin: 0 1rem;
+    font-size: 1.5em;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.projectsList li:hover{
+    color: #0a66c2;
+    border-radius: 30px;
+}
+
+.projectsList li a:hover{
+    color: #0a66c2;
+}
+
+@media screen and (max-width:768px){
+
+    .projectsContainer{
+        margin: 0 2rem;
+        box-shadow:10px 10px 1px #000;
+    }
+
+    .tituloProjetosWraper{
+        max-width: 80%;
+    }
+
+    .tituloProjetosWraper h2{
+        font-size: 4em;
+    }
+
+    .tituloProjetosWraper h3{
+        font-size: 1.5em;
+    }
+    
+    .projectsList{
+        padding: 2rem;
+    }
+
+    .projectsList li{
+        max-width: 300px;
+    }
+
+    .projectsList li h4{
+        font-size: 2em;
+    }
+
+    .projectsList li h5{
+        font-size: 1.25em;
+    }
+
+}

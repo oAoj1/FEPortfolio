@@ -1,0 +1,103 @@
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+.headerContent{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.tituloHeader{
+    font-family: 'Source Sans Pro';
+    font-weight: bolder;
+}
+
+.tituloHeader img{
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.4));
+}
+
+.menuHeader,
+.socialMediasHeader{
+    display: flex;
+    list-style-type: none;
+}
+
+.menuHeader li{
+    margin: 0 0.85rem;
+}
+
+.menuHeader li button{
+    font-size: 1.35em;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Neuton';
+    font-weight: 400;
+}
+
+.menuHeader li button:hover{
+    color: #ca00ff;
+}
+
+.socialMediasHeader li{
+    margin: 0 1rem;
+}
+
+.socialMediasHeader li a svg{
+    font-size: 2rem;
+    transition: 0.3s;
+    color: #02000a;
+}
+
+.socialMediasHeader li a svg:hover{
+    filter: drop-shadow(0px 0px 5px #b100cd);
+    color: #ca00ff;
+}
+
+.menuResponsivo{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+
+    .menuHamburguer svg{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menuHeader,
+    .socialMediasHeader{
+        display: none;
+    }
+
+    .menuResponsivo,
+    .menuHeaderResponsivo,
+    .socialMediasHeaderResponsivo{
+        align-items: center;
+        display: flex;
+        list-style-type: none;
+    }
+
+    .menuResponsivo li,
+    .menuHeaderResponsivo li,
+    .socialMediasHeaderResponsivo li{
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+
+    .menuResponsivo li svg,
+    .menuHeaderResponsivo li svg,
+    .socialMediasHeaderResponsivo li svg{
+        color: #02000a;
+    }
+
+}

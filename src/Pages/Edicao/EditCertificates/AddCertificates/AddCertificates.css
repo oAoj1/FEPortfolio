@@ -1,0 +1,48 @@
+.addCertificatesContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #2d2c2e ,#02000a );
+}
+
+.addCertificatesContainer button{
+    padding: 10px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 1rem 0;
+}
+
+.addCertificatesContainer form{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.3));
+}
+
+.addCertificatesContainer form input{
+    width: 1000px;
+    margin: 0.5rem 0;
+    padding: 5px;
+    font-size: 1.25em;
+    font-family: 'Poppins';
+    border: 0;
+    outline: 0;
+}
+
+.addCertificatesContainer form input::placeholder{
+    font-family: 'Tomorrow';
+    font-size: 0.75em;
+}
+
+.addCertificatesContainer form button{
+    transition: 0.3s;
+    border: 0;
+    outline: 0;
+}
+
+.addCertificatesContainer form button:hover{
+    background-color: #7fff00;
+}
