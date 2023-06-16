@@ -1,6 +1,6 @@
 import './Skills.css'
-import { useState,useEffect } from 'react'
 import api from '../../../services/api'
+import { useState,useEffect } from 'react'
 import { BiRightArrowAlt,BiLeftArrowAlt } from 'react-icons/bi'
 import { BsArrowBarDown } from 'react-icons/bs'
 
