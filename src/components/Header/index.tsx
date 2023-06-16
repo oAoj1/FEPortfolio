@@ -49,7 +49,7 @@ export default function Header(){
             <div className="headerContent">
                 
                 <h1 className='tituloHeader'>
-                    <img src='public/JM.png' alt='JM'/>
+                    <img src='JM.png' alt='JM'/>
                 </h1>
 
                 <div className='menuResponsivo'>
