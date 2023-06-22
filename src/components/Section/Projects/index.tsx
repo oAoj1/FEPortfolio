@@ -34,7 +34,7 @@ export default function Projects(){
                             <div className="links">
                                 <a target='_blank' href={projects.html_url}>GitHub</a><br />
 
-                                {projects.homepage.length > 1 ? 
+                                {projects.homepage > 1 ? 
                                 <a target="_blank" href={projects.homepage}>Site</a> : ''}
                                 
                             </div>
