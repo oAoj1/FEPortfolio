@@ -33,7 +33,8 @@ export default function Projects(){
                             <h5>{projects.description}</h5>
                             <div className="links">
                                 <a target='_blank' href={projects.html_url}>GitHub</a><br />
-                                <a target="_blank" href={projects.homepage}>Site</a>
+                                {projects.homepage == '' ? '' : <a target="_blank" href={projects.homepage}>Site</a>}
+                                
                                 
                             </div>
                         </li>
