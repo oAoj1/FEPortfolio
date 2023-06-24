@@ -63,41 +63,15 @@ header{
     color: #ca00ff;
 }
 
-.menuResponsivo{
-    display: none;
-}
-
 @media screen and (max-width:768px){
-
-    .menuHamburguer svg{
-        font-size: 2rem;
-        cursor: pointer;
+    .headerContent{
+        padding: 0.75rem;
+        flex-direction: column;
     }
 
-    .menuHeader,
-    .socialMediasHeader{
-        display: none;
-    }
-
-    .menuResponsivo,
-    .menuHeaderResponsivo,
-    .socialMediasHeaderResponsivo{
-        align-items: center;
-        display: flex;
-        list-style-type: none;
-    }
-
-    .menuResponsivo li,
-    .menuHeaderResponsivo li,
-    .socialMediasHeaderResponsivo li{
-        margin: 0 1rem;
-        font-size: 2rem;
-    }
-
-    .menuResponsivo li svg,
-    .menuHeaderResponsivo li svg,
-    .socialMediasHeaderResponsivo li svg{
-        color: #02000a;
+    .menuHeader li button{
+        font-size: 1.10em;
+        margin: 0 0 1rem 0;
     }
 
 }

@@ -52,30 +52,6 @@ export default function Header(){
                     <img src='https://i.im.ge/2023/06/24/iGmgIf.JM.png' alt='JM'/>
                 </h1>
 
-                <div className='menuResponsivo'>
-
-                    <span className='menuHamburguer'>
-                        <AiOutlineMenu/>
-                    </span>
-
-                    <ul className='menuHeaderResponsivo'>
-                        {opcoesMenuHeader.map((opcoes:string) => (
-                            navegarMenu(opcoes)
-                        ))}
-                    </ul>
-
-                    <ul className='socialMediasHeaderResponsivo'>
-                        {opcoesSocialMediasHeader.map((social:any) => (
-                            <li key={social.name}>
-                                <a href={social.link} target='_blank'>
-                                    {social.logo}    
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-
-                </div>
-
                 <ul className='menuHeader'>
                     {opcoesMenuHeader.map((opcoes:string) => (
                         navegarMenu(opcoes)
