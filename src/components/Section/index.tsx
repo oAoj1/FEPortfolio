@@ -27,7 +27,7 @@ export default function Section(){
                     </div>
 
                     <div className="desktopSection">
-                        <img src='JM.png' alt='JM'/>
+                        <img src='/../../../../../JM.png' alt='JM'/>
                     </div>
 
                 </div>
