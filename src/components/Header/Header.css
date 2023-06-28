@@ -69,9 +69,19 @@ header{
         flex-direction: column;
     }
 
+    .menuHeader{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .menuHeader li button{
-        font-size: 1.10em;
+        text-decoration: underline;
+        font-size: 1.5em;
         margin: 0 0 1rem 0;
+    }
+
+    .socialMediasHeader{
+        margin: 1rem 0 ;
     }
 
 }
