@@ -91,6 +91,10 @@
     color: #cca112;
 }
 
+.rankList li:nth-child(5){
+    color: #e6190e;
+}
+
 .skillsContainer h2{
     text-align: center;
     font-size: 5em;

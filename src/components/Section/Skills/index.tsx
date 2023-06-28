@@ -22,6 +22,10 @@ export default function Skill(){
         {
             nivel:'c',
             qualificacao:'razoavél'
+        },
+        {
+            nivel:'d',
+            qualificacao:'iniciante'
         }
     ]
 
