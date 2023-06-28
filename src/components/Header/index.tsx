@@ -49,7 +49,7 @@ export default function Header(){
             <div className="headerContent">
                 
                 <h1 className='tituloHeader'>
-                    <img src='https://i.im.ge/2023/06/24/iGmgIf.JM.png' alt='JM'/>
+                    <img src='' alt='JM'/>
                 </h1>
 
                 <ul className='menuHeader'>
