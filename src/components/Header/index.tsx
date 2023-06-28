@@ -1,5 +1,4 @@
 import './Header.css'
-import { AiOutlineMenu } from 'react-icons/ai'
 import { ImLinkedin2 } from 'react-icons/im'
 import { VscGithubAlt } from 'react-icons/vsc'
 
