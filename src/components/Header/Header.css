@@ -65,7 +65,7 @@ header{
 
 @media screen and (max-width:768px){
     .headerContent{
-        padding:0.25rem 0 1rem 0;
+        padding:0.25rem 0;
         flex-direction: column;
     }
 
@@ -76,12 +76,11 @@ header{
 
     .menuHeader li button{
         text-decoration: underline;
-        font-size: 1.5em;
-        margin: 0 0 1rem 0;
+        font-size: 1.15em;
     }
 
     .socialMediasHeader{
-        margin: 1rem 0 ;
+        margin: 1.25rem 0 0.5rem 0;
     }
 
 }
