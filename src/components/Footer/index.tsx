@@ -21,15 +21,7 @@ export default function Footer(){
         <footer>
              <div className="footerContent">
                 <h1 className='tituloFooter'>
-                    <span className='nome'> 
-                        <span className='joao'>
-                            <span className='negrito'>J</span>oão
-                        </span>
-                        <div className="marques">
-                            <span className='negrito'>M</span>arques
-                        </div>
-                        <span className='ponto'>.</span> 
-                    </span>
+                    <img src='https://i.im.ge/2023/06/29/0yq9Q1.JM2.png' alt='JM'/>
                 </h1>
 
                 <ul className='socialMediasFooter'>
