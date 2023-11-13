@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from "axios"
 
 const api = axios.create({
-    baseURL: 'https://portfolior-back-end-production.up.railway.app'
+    baseURL: 'http://localhost:5555'
 })
 
 export default api
