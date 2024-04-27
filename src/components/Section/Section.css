@@ -69,3 +69,17 @@ section{
     clip-path: circle(600px at right 100px);
     z-index: 1;
 }
+
+@media screen and (max-width:768px){
+    .tituloSection h1{
+        font-size: 1.75em;
+    }
+
+    .tituloSection h2{
+        font-size: 0.85em;
+    }
+
+    .tituloSection button{
+        font-weight: 1em;
+    }
+}

@@ -73,3 +73,9 @@ header{
     transition: 0.1ms ease;
     color: var(--azulEscuro);
 }
+
+@media screen and (max-width:768px){
+    .opcoesMenuHeader{
+        display: none;
+    }
+}

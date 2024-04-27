@@ -2,6 +2,8 @@ import './Certificates.css'
 import api from '../../../services/api'
 import { useState,useEffect } from 'react'
 
+import { FaLink } from "react-icons/fa";
+
 export default function Certificates(){
 
     const [certificates,setCertificates] = useState<any>([])
@@ -19,24 +21,36 @@ export default function Certificates(){
     }, [])
 
     return(
-        <div className="certificatesWraper" id='CertificadosSection'>
-            <div className="certificatesContainer" >
-                <h2> <span>Certificados</span> </h2>
-                <h3>Veja as certificações das minhas competências técnicas.</h3>
+        <div className="certificatesContainer" id='CertificadosSection'>
+            <div className="tituloCertificados">
+                <h1>Certificados</h1>
+                <h2>Confira minhas certificações dos cursos que realizei</h2>
+            </div>
 
-                <ul className='certificatesList'>
-                    {certificates.map((certificates:any) => (
-                        <li key={certificates._id}>
-                            <h4>{certificates.curso}</h4>
-                            <h5>{certificates.plataforma}</h5>
-                            <a target='_blank' href={certificates.linkCertificado}>
-                                Link certificado
+            <ul className="listaCertificados">
+                {certificates.map((certificados:any) => (
+                    <li key={certificados._id}>
+                        <div className="tituloLI">
+                            <h2>{certificados.curso}</h2>
+                            <h3>{certificados.plataforma}</h3>
+                        </div>
+                        <div className="linkCertificado">
+                            <a 
+                                href={certificados.linkCertificado} 
+                                target="_blank"
+                            >
+                                <FaLink 
+                                    title={`Certificado de ${certificados.curso}`}
+                                />
                             </a>
-                        </li>
-                    ))}            
-                </ul>
-            </div>                        
+                        </div>
+                    </li>
+                ))}
+            </ul>
 
+            <div className="circuloContainer">
+                <span className='circulo'></span>
+            </div>
         </div>
     )
 }

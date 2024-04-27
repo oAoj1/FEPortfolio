@@ -46,6 +46,7 @@
     margin: 0.25rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border: 1px solid var(--ciano);
 }
 
@@ -91,4 +92,18 @@
     color: var(--cinzaClaro);
     transition: 0.2ms ease;
     transform: scale(0.95);
+}
+
+@media screen and (max-width:768px){
+    .projectsContainer{
+        flex-direction: column;
+    }
+
+    .tituloProjects{
+        margin: 3rem 0 ;
+    }
+
+    .listaProjetos li{
+        width: 100%;
+    }
 }

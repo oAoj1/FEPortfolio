@@ -1,5 +1,6 @@
 .SkillsContainer{
     width: 100%;
+    padding: 10rem 0;
     background-color: var(--preto);
     color: var(--branco);
     display: flex;
@@ -7,9 +8,91 @@
     justify-content: space-evenly;
 }
 
+.tituloSkills h1{
+    font-size: 3em;
+}
+
+.tituloSkills h2{
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--cinzaClaro);
+    font-size: 1.1em;
+}
+
 .todasSkills{
-    width: 30%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.soft,
+.hard{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soft h2,
+.hard h2{
+    font-size: 2.5em;
+    color: var(--ciano);
+}
+
+.softSkills,
+.hardSkills{
+    list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.softSkills li,
+.hardSkills li{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    border: 1px solid var(--cinzaClaro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.softSkills li h4,
+.hardSkills li h4{
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+.softSkills li span svg,
+.hardSkills li span svg{
+    font-size: 1.25em;
+    margin: 0 0.25rem 0 0.5rem;
+}
+
+@media screen and (max-width:768px){
+    .SkillsContainer{
+        flex-direction: column;
+    }
+
+    .tituloSkills{
+        text-align: center;
+    }
+
+    .todasSkills{
+        margin: 3rem 0;
+    }
+    
+    .softSkills li,
+    .hardSkills li{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .softSkills li h4,
+    .hardSkills li h4{
+        font-size: 1em;
+    }
+
 }
