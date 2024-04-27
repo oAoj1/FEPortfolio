@@ -7,9 +7,8 @@ export default function AddSkills(){
 
     const navigate = useNavigate()
     const [dadosSkills,setDadosSkills] = useState<any>({
-        rank:'',
+        skill:'',
         habilidade:'',
-        skill:''
     })
 
     async function enviarSkill(event:React.FormEvent<HTMLFormElement>){
@@ -36,14 +35,6 @@ export default function AddSkills(){
             </Link>
 
             <form onSubmit={enviarSkill}>
-                <input 
-                    required
-                    type="text" 
-                    placeholder="Adicionar rank"
-                    onChange={e => setDadosSkills({
-                        ...dadosSkills, rank:e.target.value
-                    })}
-                />
                 <input 
                     required
                     type="text" 

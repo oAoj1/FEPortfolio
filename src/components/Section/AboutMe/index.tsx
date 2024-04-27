@@ -27,7 +27,7 @@ export default function AboutMe(){
             <div className="aboutMeContainer" >
                 
                 <h2> <span>Sobre mim</span> </h2>
-                <h3>Conheça mais sobre mim no mundo da programação</h3>
+                <h3>Conheça mais sobre mim</h3>
                 
                 <ul className='aboutMeList'>
                     {aboutMe.map((about:any)=> (

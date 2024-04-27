@@ -6,33 +6,27 @@ import Certificates from './Certificates'
 import AboutMe from './AboutMe'
 
 export default function Section(){
+
     return(
         <>
-            <section id='HomeSection'>   
-                <div className='tituloSection'>
+            <section id='HomeSection'> 
+                <div className="tituloSection">
+                    <h1> 
+                        <span>Olá,</span> <br /> 
+                        <span>eu sou <i>João</i>,</span> <br /> 
+                        <span>desenvolvedor front-end</span>
+                    </h1>
 
-                    <div className="descSection">
-                        <h1>
-                            <span className="nome">
-                                <span className='joao'> 
-                                    <span className='j'>J</span>oão
-                                </span> 
-                                <span className="marques">
-                                    <span className='m'>M</span>arques - <br /> 
-                                </span>
-                            </span>
-                            Portfólio
-                        </h1>
-                        <h2>Sejam todos muito bem vindos(as) ao meu <span className='port'>portfólio</span> , veja os meus melhores projetos, minhas habilidades e um pouco mais sobre minha pessoa!</h2>
-                    </div>
+                    <h2>Conheça mais sobre minha pessoa e minha carreira</h2>
 
-                    <div className="desktopSection">
-                        <img src='https://i.im.ge/2023/06/24/iGmgIf.JM.png' alt='JM'/>
-                    </div>
-
+                    <button>Veja mais</button>
+                </div> 
+                 
+                <div className="circuloSection">
+                    <span className='circulo'></span>
                 </div>
             </section>
-
+        
             <main>
                 <Projects/>
                 <Skill/>

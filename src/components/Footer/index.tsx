@@ -1,8 +1,25 @@
 import './Footer.css'
+import api from '../../services/api.ts'
+import { useState, useEffect } from 'react'
 import { ImLinkedin2 } from 'react-icons/im'
 import { VscGithubAlt } from 'react-icons/vsc'
+import { useNavigate } from 'react-router-dom'
 
 export default function Footer(){
+
+    const navigate = useNavigate()
+    const [senha,setSenha] = useState<string>('')
+
+    useEffect(() => {
+        async function lerSenha(){
+            const response = await api.get('/senha')
+            const data = response.data
+
+            setSenha(data)
+        }
+
+        lerSenha()
+    },[])
 
     const opcoesSocialMediasHeader = [
         {
@@ -17,11 +34,26 @@ export default function Footer(){
         }
     ]
 
+    function handleLogin(){
+        var senhaInserida = prompt('Digite a senha')
+        if(senhaInserida == senha){
+            navigate('/edit')
+        }else{
+            alert('Senha incorreta')
+        }
+    }
+
     return(
+        {/*
+    
         <footer>
              <div className="footerContent">
                 <h1 className='tituloFooter'>
-                    <img src='https://i.im.ge/2023/06/29/0yq9Q1.JM2.png' alt='JM'/>
+                    <img 
+                        src='https://i.im.ge/2023/06/29/0yq9Q1.JM2.png' 
+                        alt='JM'
+                        onClick={() => handleLogin()}
+                    />
                 </h1>
 
                 <ul className='socialMediasFooter'>
@@ -35,5 +67,6 @@ export default function Footer(){
                 </ul>
             </div>
         </footer>
+    */}
     )
 }

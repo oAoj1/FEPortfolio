@@ -1,4 +1,5 @@
 import './Header.css'
+import MenuResponsivo from './MenuResponsivo'
 import { ImLinkedin2 } from 'react-icons/im'
 import { VscGithubAlt } from 'react-icons/vsc'
 
@@ -45,29 +46,19 @@ export default function Header(){
 
     return(
         <header>
-            <div className="headerContent">
-                
-                <h1 className='tituloHeader'>
-                    <img src='https://i.im.ge/2023/06/24/iGmgIf.JM.png' alt='JM'/>
-                </h1>
-
-                <ul className='menuHeader'>
-                    {opcoesMenuHeader.map((opcoes:string) => (
-                        navegarMenu(opcoes)
-                    ))}
-                </ul>
-
-                <ul className='socialMediasHeader'>
-                    {opcoesSocialMediasHeader.map((social:any) => (
-                        <li key={social.name}>
-                            <a href={social.link} target='_blank'>
-                                {social.logo}    
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+            <div className="logoHeader">
+                <span> João <i>Marques</i> </span>
             </div>
             
+            <ul className='opcoesMenuHeader'>
+                {opcoesMenuHeader.map(opcoes => (
+                    <li key={opcoes}>
+                        <button>
+                            {opcoes}
+                        </button>
+                    </li>
+                ))}
+            </ul>
         </header>
     )
 }

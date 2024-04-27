@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@200;400;700&family=Source+Sans+Pro:wght@200;400;700&family=Taviraj:wght@100;200;300;400;700&display=swap');
 
-/* 
-#9d00c6
-#b100cd
-#540261
-#ca00ff
-#4c00b0
-#210e42
-#0d2173
-#0a66c2
-#01ffff
-#2d2c2e
-#02000a 
-#e0dede
-*/
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(./fonts/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro','Neuton','Taviraj', Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy-Light', 'Gilroy-Medium', 'Gilroy-Bold', 'Source Sans Pro', 'Neuton','Taviraj', Arial, Helvetica, sans-serif;
+}
+
+:root{
+  --ciano:#01ffff;
+  --cianoEscuro:#02b3b3;
+  --azul:#0a66c2;
+  --azulEscuro:#0d2173;
+  
+  --preto:#02000a;
+  --cinzaEscuro:#2d2c2e;
+  --cinzaClaro:#cccc;
+  --branco:#e0dede;
 }

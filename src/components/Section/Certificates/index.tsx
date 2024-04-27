@@ -22,7 +22,7 @@ export default function Certificates(){
         <div className="certificatesWraper" id='CertificadosSection'>
             <div className="certificatesContainer" >
                 <h2> <span>Certificados</span> </h2>
-                <h3>Veja as minhas conclusões dos meus cursos</h3>
+                <h3>Veja as certificações das minhas competências técnicas.</h3>
 
                 <ul className='certificatesList'>
                     {certificates.map((certificates:any) => (

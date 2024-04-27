@@ -1,86 +1,75 @@
 header{
     width: 100%;
-    position: fixed;
-    z-index: 2;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
-}
-
-.headerContent{
-    padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #fff;
+    padding: 1rem 0;
+    background-color: var(--preto);
+    position: fixed;
+    z-index: 9999;
 }
 
-.tituloHeader{
-    font-family: 'Source Sans Pro';
-    font-weight: bolder;
+.logoHeader{
+    padding: 0.25rem;
 }
 
-.tituloHeader img{
-    width: 70px;
-    height: 70px;
-    filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.4));
+.logoHeader span{
+    color: var(--branco);
+    font-size: 1.5rem;
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
 }
 
-.menuHeader,
-.socialMediasHeader{
+.logoHeader span i{
+    font-style: normal;
+    color: var(--ciano);
+    font-family: 'Gilroy-Light';
+}
+
+.opcoesMenuHeader{
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
 }
 
-.menuHeader li{
-    margin: 0 0.85rem;
+.opcoesMenuHeader li{
+    padding:0 0.5rem;
 }
 
-.menuHeader li button{
-    font-size: 1.35em;
+.opcoesMenuHeader li button{
+    font-family: 'Gilroy-Light';
+    letter-spacing: 1px;
     background-color: transparent;
     border: 0;
+    outline: 0;
+    color:var(--branco);
     cursor: pointer;
-    transition: 0.2s;
-    font-family: 'Neuton';
-    font-weight: 400;
+    font-size: 1.10rem;
+    transition: 0.2s ease;
+    position: relative;
 }
 
-.menuHeader li button:hover{
-    color: #ca00ff;
+.opcoesMenuHeader button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--ciano);
+    transition: width 0.3s ease;
 }
 
-.socialMediasHeader li{
-    margin: 0 1rem;
+.opcoesMenuHeader button:hover::after {
+    width: 100%;
 }
 
-.socialMediasHeader li a svg{
-    font-size: 2rem;
-    transition: 0.3s;
-    color: #02000a;
+.opcoesMenuHeader li button:hover{
+    color: var(--ciano);
 }
 
-.socialMediasHeader li a svg:hover{
-    filter: drop-shadow(0px 0px 5px #b100cd);
-    color: #ca00ff;
-}
-
-@media screen and (max-width:768px){
-    .headerContent{
-        padding:0.25rem 0;
-        flex-direction: column;
-    }
-
-    .menuHeader{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .menuHeader li button{
-        text-decoration: underline;
-        font-size: 1.15em;
-    }
-
-    .socialMediasHeader{
-        margin: 1.25rem 0 0.5rem 0;
-    }
-
+.opcoesMenuHeader li button:active{
+    transition: 0.1ms ease;
+    color: var(--azulEscuro);
 }
