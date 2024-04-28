@@ -1,7 +1,7 @@
 .projectsContainer{
     width: 100%;
     padding: 10rem 0;
-    background-color: var(--preto);
+    background: linear-gradient(to bottom, var(--azulPreto), var(--preto));
     color: var(--branco);
     display: flex;
     align-items: center;
@@ -42,12 +42,13 @@
 }
 
 .listaProjetos li{
-    width: 40%;
+    width: 30%;
     margin: 0.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid var(--ciano);
+    flex-wrap: wrap;
 }
 
 .listaProjetos li .tituloLI{
@@ -60,7 +61,7 @@
 }
 
 .listaProjetos li .tituloLI h4{
-    max-width: 70%;
+    max-width: 90%;
     font-size: 0.75em;
     padding: 0.5rem 0;
     font-weight: lighter;

@@ -1,9 +1,6 @@
 import './AboutMe.css'
 import api from '../../../services/api'
 import { useState,useEffect } from 'react'
-import { GiBookCover,GiRank3 } from 'react-icons/gi'
-import { GrUserWorker } from 'react-icons/gr'
-import { BsFillLightbulbFill } from 'react-icons/bs'
 
 export default function AboutMe(){
 
@@ -23,57 +20,47 @@ export default function AboutMe(){
     },[])
 
     return(
-        <div className="aboutMeWraper" id='SobreMimSection'>
-            <div className="aboutMeContainer" >
-                
-                <h2> <span>Sobre mim</span> </h2>
-                <h3>Conheça mais sobre mim</h3>
-                
-                <ul className='aboutMeList'>
-                    {aboutMe.map((about:any)=> (
-                        <li key={about._id}>
-
-                            <div className='aboutInfoContainer'>
-                                <div className='about'>
-                                    <GiRank3/>
-                                    <h4>Cargo atual</h4>
-                                    <span>{about.cargoAtual}</span>
-                                </div>
-
-                                <div className='about'>
-                                    <GiBookCover/>
-                                    <h4>Cursando</h4>
-                                    <span>{about.cursando}</span>
-                                </div>
-
-                                <div className='about'>
-                                    <GrUserWorker/>
-                                    <h4>Trabalhando</h4>
-                                    <span>{about.trabalhando}</span>
-                                </div>
-
-                                <div className='about'>
-                                    <BsFillLightbulbFill/>
-                                    <h4>Interesse profissional</h4>
-                                    <span>{about.interesse}</span>
-                                </div>
-                            </div>
-
-                            <div className='aboutWraper'>
-                                <h5>Biografia</h5>
-                                <span>{about.biografia}</span>
-                            </div>
-
-                            <div className="aboutWraper">
-                                <h5>Expêriencia</h5>
-                                <span>{about.experiencia}</span>
-                            </div>
-
-                        </li>
-                    ))}
-                </ul>
+        <div className="aboutmeContainer" id='SobreMimSection'>
+            <div className="tituloAboutme">
+                <h1>Sobre mim</h1>
+                <h2>Conheça um pouco mais sobre minha pessoa e minha carreira</h2>
             </div>
 
+            <ul className="listaAboutme">
+                {aboutMe.map((about:any) => (
+                    <li key={about._id}>
+                        <div className="primeiraDescricao">
+                            <div className="biografia">
+                                <h2>Biografia</h2>
+                                <p>{about.biografia}</p>
+                            </div>
+                            <div className="experiencia">
+                                <h2>Experiência</h2>
+                                <p>{about.experiencia}</p>
+                            </div>
+                        </div>
+
+                        <div className="segundaDescricao">
+                            <div className="cargo">
+                                <h2>Cargo atual</h2>
+                                <p>{about.cargoAtual}</p>
+                            </div>
+                            <div className="cursando">
+                                <h2>Cursando</h2>
+                                <p>{about.cursando}</p>
+                            </div>
+                            <div className="interesse">
+                                <h2>Interesse</h2>
+                                <p>{about.interesse}</p>
+                            </div>
+                            <div className="trabalhando">
+                                <h2>Trabalhando</h2>
+                                <p>{about.trabalhando}</p>
+                            </div>
+                        </div>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

@@ -1,103 +1,109 @@
-.aboutMeWraper{
+.aboutmeContainer{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-.aboutMeContainer{
-    width: 100%;
-    margin: 0 5rem;
-    padding: 0 5rem 4rem 5rem;
+    background: linear-gradient(to bottom, var(--azulPreto), var(--preto));
+    padding: 10rem 0;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(-35deg,#e0dede,#fff);
-    border-radius:20px;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    align-items: center;
 }
 
-.aboutMeContainer h2{
-    text-align: center;
-    font-family: 'Taviraj';
+.tituloAboutme{
+    width: 50%;
 }
 
-.aboutMeContainer h2 span{
-    font-size: 5em;
-    border-bottom: 1px solid #540261;
+.tituloAboutme h1{
+    font-size: 2.5em;
+    color: var(--branco);
 }
 
-.aboutMeContainer h3{
-    text-align: center;
-    margin: 1rem 0;
-    font-size: 1.5em;
-    font-family: 'Neuton';
-    color: #540261;
+.tituloAboutme h2{
+    font-size: 0.9em;
+    color: var(--cinzaClaro);
+    font-style: italic;
+    font-weight: lighter;
 }
 
-.aboutInfoContainer{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.aboutMeList{
+.listaAboutme{
+    width: 50%;
     list-style-type: none;
 }
 
-.about{
-    width: 200px;
-    margin: 2rem 1rem 1rem 1rem;
-    text-align: center;
+.listaAboutme li{
+    margin: 3rem 0;
 }
 
-.about h4{
-    font-size: 2em;
-}
-
-.about span{
-    margin: 2rem 0;
-    font-size: 2em;
-    font-family: 'Neuton';
-    font-weight: lighter;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
-}
-
-.about svg{
-    font-size: 4rem;
+.listaAboutme li .primeiraDescricao{
     display: flex;
-    margin: auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.aboutWraper{
+.experiencia,
+.biografia{
     margin: 1rem 0;
 }
 
-.aboutMeWraper h5{
-    font-size: 3em;
-    color: #540261;
+.experiencia h2,
+.biografia h2{
+    font-size: 1.25em;
+    color: var(--ciano);
+    font-weight: normal;
 }
 
-.aboutMeWraper span{
-    margin: 2rem 0;
-    font-size: 2em;
-    font-family: 'Neuton';
+.experiencia p,
+.biografia p{
+    width: 90%;
+    font-size: 0.9em;
+    margin: 0.5rem 0;
+    color: var(--branco);
+}
+
+.segundaDescricao{
+    margin: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cargo,
+.cursando,
+.interesse,
+.trabalhando{
+    width: 50%;
+    margin: 0.25rem 0;
+}
+
+.cargo h2,
+.cursando h2,
+.interesse h2,
+.trabalhando h2{
+    font-size: 1em;
+    color: var(--ciano);
+}
+
+.cargo p,
+.cursando p,
+.interesse p,
+.trabalhando p{
+    font-size: 0.75em;
+    color: var(--branco);
     font-weight: lighter;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+    font-style: italic;
+    margin: 0.25rem 0;
 }
 
 @media screen and (max-width:768px){
-
-    .aboutMeContainer{
-        margin:0 2rem;
-        padding:0 2rem 1rem 2rem;
-    }
-    
-    .aboutMeContainer h2 span{
-        font-size: 3em;
+    .primeiraDescricao,
+    .segundaDescricao{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .about{
-        margin: 2rem 1rem 1rem 1rem;
+    .cargo,
+    .cursando,
+    .interesse,
+    .trabalhando{
+        width: 100%;
     }
-    
 }

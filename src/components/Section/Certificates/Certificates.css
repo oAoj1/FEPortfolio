@@ -1,7 +1,7 @@
 .certificatesContainer{
     width: 100%;
     padding: 10rem 0;
-    background-color: var(--preto);
+    background: linear-gradient(to top, var(--azulPreto), var(--preto));
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -69,4 +69,21 @@
     transform: scale(0.95);
     color: var(--cinzaClaro);
     transition: 0.2ms;
+}
+
+@media screen and (max-width:768px){
+    .certificatesContainer{
+        flex-direction: column;
+    }
+
+    .tituloCertificados{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .listaCertificados{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
 }
