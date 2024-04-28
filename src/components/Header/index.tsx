@@ -53,12 +53,12 @@ export default function Header(){
             <ul className='opcoesMenuHeader'>
                 {opcoesMenuHeader.map(opcoes => (
                     <li key={opcoes}>
-                        <button>
-                            {opcoes}
-                        </button>
+                        {navegarMenu(opcoes)}
                     </li>
                 ))}
             </ul>
+
+            <MenuResponsivo/>
         </header>
     )
 }

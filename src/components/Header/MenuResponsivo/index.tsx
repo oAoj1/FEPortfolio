@@ -1,7 +1,5 @@
 import './MenuResponsivo.css'
 import { useState } from 'react'
-import { ImLinkedin2 } from 'react-icons/im'
-import { VscGithubAlt } from 'react-icons/vsc'
 import { RxHamburgerMenu } from "react-icons/rx"
 import { MdClose } from "react-icons/md"
 
@@ -17,18 +15,11 @@ export default function MenuResponsivo(){
         'SobreMim'
     ]
 
-    const opcoesSocialMediasHeader = [
-        {
-            name:'github',
-            logo:<VscGithubAlt/>,
-            link:'https://github.com/oAoj1'
-        },
-        {
-            name:'linkedin',
-            logo:<ImLinkedin2/>,
-            link:'https://www.linkedin.com/in/joão-marques-52776123b/?trk=public_profile-settings_edit-profile-content&originalSubdomain=br'
-        }
-    ]
+    window.addEventListener('resize', fecharMenu)
+
+    function fecharMenu(){
+        setIsOpen(false)
+    }
 
     function scrollMenu(componente:any){
         const scrollID = `${componente}Section`
@@ -43,37 +34,40 @@ export default function MenuResponsivo(){
             />
 
             {isOpen == false ? '' : 
-                <aside className='menuResponsivo'>
-                    <div className="fecharMenuResponsivo">
-                        <MdClose 
-                            onClick={() => setIsOpen(false)} 
-                            className='fecharMenuResponsivoHamburguer'
-                        />
+                <>  
+                    <div 
+                        className='overlay'
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
                     </div>
+                    <aside className='menuResponsivo'>
+                        <div className="fecharMenuResponsivo">
+                            <MdClose 
+                                onClick={() => setIsOpen(false)} 
+                                className='fecharMenuResponsivoHamburguer'
+                            />
+                        </div>
+        
+                        <div className="opcoesMenuResponsivo">
+                            <ul className='menuHeaderResponsivo'>
+                                {opcoesMenuHeader.map((opcoes:string) => (
+                                    <li key={opcoes}>
+                                        <button 
+                                            onClick={() => {
+                                                scrollMenu(opcoes)
+                                                setIsOpen(!isOpen)
+                                            }}
+                                        >
+                                            {opcoes}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
 
-                    <div className="opcoesMenuResponsivo">
-                        <ul className='menuHeaderResponsivo'>
-                            {opcoesMenuHeader.map((opcoes:string) => (
-                                <li key={opcoes}>
-                                    <button onClick={() => scrollMenu(opcoes)}>
-                                        {opcoes}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
+                        </div>
 
-                        <ul className='socialMediasHeaderResponsivo'>
-                            {opcoesSocialMediasHeader.map((social:any) => (
-                                <li key={social.name}>
-                                    <a href={social.link} target='_blank'>
-                                        {social.logo}    
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                </aside>
+                    </aside>
+                </>
 
             }
             
