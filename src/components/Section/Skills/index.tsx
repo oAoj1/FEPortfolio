@@ -46,10 +46,6 @@ export default function Skill(){
 
     return(
         <div className="SkillsContainer" id='SkillsSection'>
-            <div className="tituloSkills">
-                <h1>Skills</h1>
-                <h2>Veja minhas principais habilidades</h2>
-            </div>
 
             <div className="todasSkills">
                 <div className="soft">
@@ -102,6 +98,11 @@ export default function Skill(){
                         ))}
                     </ul>
                 </div>
+            </div>
+
+            <div className="tituloSkills">
+                <h1>Skills</h1>
+                <h2>Veja minhas principais habilidades</h2>
             </div>
 
         </div>

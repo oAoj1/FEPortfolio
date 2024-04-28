@@ -5,7 +5,7 @@
     color: var(--branco);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 100;
 }
 
@@ -17,7 +17,7 @@
 
 .tituloProjects,
 .listaProjetos{
-    width: 70%;
+    width: 60%;
 }
 
 .tituloProjects h1{
@@ -36,19 +36,18 @@
 .listaProjetos{
     list-style-type: none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .listaProjetos li{
-    width: 30%;
+    width: 35%;
     margin: 0.25rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     border: 1px solid var(--ciano);
-    flex-wrap: wrap;
 }
 
 .listaProjetos li .tituloLI{
@@ -61,7 +60,7 @@
 }
 
 .listaProjetos li .tituloLI h4{
-    max-width: 90%;
+    max-width: 70%;
     font-size: 0.75em;
     padding: 0.5rem 0;
     font-weight: lighter;
@@ -76,7 +75,7 @@
 }
 
 .listaProjetos li .linksLI{
-    padding: 0 0.5rem;
+    padding: 0.5rem;
 }
 
 .listaProjetos li .linksLI span svg{
@@ -95,16 +94,23 @@
     transform: scale(0.95);
 }
 
+@media screen and (max-width:1100px){
+    .listaProjetos li{
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width:768px){
     .projectsContainer{
         flex-direction: column;
     }
 
     .tituloProjects{
-        margin: 3rem 0 ;
+        margin: 3rem 0;
     }
 
     .listaProjetos li{
         width: 100%;
+        flex-wrap: nowrap;
     }
 }

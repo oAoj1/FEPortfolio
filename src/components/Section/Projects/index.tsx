@@ -41,21 +41,13 @@ export default function Projects(){
                             <h3>{projeto.name}</h3>
                             <h4>{projeto.description}</h4>
                             <h5>
-                                {projeto.language == 'TypeScript' ? 
-                                    <BiLogoTypescript 
-                                        title={projeto.language}
-                                    /> 
-                                :projeto.language == 'JavaScript' ? 
-                                    <BiLogoJavascript 
-                                        title={projeto.language}
-                                    />
-                                :projeto.language == 'Java' ? 
-                                    <FaJava 
-                                        title={projeto.language}
-                                    /> 
+                                {projeto.language == 'TypeScript' ? <BiLogoTypescript  title={projeto.language}/> 
+                                :projeto.language == 'JavaScript' ? <BiLogoJavascript title={projeto.language}/>
+                                :projeto.language == 'Java' ? <FaJava title={projeto.language}/> 
                                 :projeto.language}
                             </h5>
                         </div>
+                        
                         <div className="linksLI">
                             <span>
                                 {projeto.html_url.length > 1 ? 
