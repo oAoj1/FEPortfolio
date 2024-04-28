@@ -19,7 +19,11 @@ export default function Section(){
 
                     <h2>Conheça mais sobre minha pessoa e minha carreira</h2>
 
-                    <button>Veja mais</button>
+                    <button 
+                        onClick={() => document.getElementById('SobreMimSection')?.scrollIntoView({behavior:'smooth'})}
+                    >
+                        Sobre mim
+                    </button>
                 </div> 
                  
                 <div className="circuloSection">
