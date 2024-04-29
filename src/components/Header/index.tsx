@@ -1,7 +1,5 @@
 import './Header.css'
 import MenuResponsivo from './MenuResponsivo'
-import { ImLinkedin2 } from 'react-icons/im'
-import { VscGithubAlt } from 'react-icons/vsc'
 
 export default function Header(){
 
@@ -13,18 +11,6 @@ export default function Header(){
         'SobreMim'
     ]
 
-    const opcoesSocialMediasHeader = [
-        {
-            name:'github',
-            logo:<VscGithubAlt/>,
-            link:'https://github.com/oAoj1'
-        },
-        {
-            name:'linkedin',
-            logo:<ImLinkedin2/>,
-            link:'https://www.linkedin.com/in/joão-marques-52776123b/?trk=public_profile-settings_edit-profile-content&originalSubdomain=br'
-        }
-    ]
 
     function navegarMenu(componente:any){
         const scrollID = `${componente}Section`
