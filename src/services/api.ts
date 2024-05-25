@@ -1,7 +1,9 @@
 import axios from "axios"
 
+//'http://localhost:5555'
+
 const api = axios.create({
-    baseURL: 'http://localhost:5555' || "https://beportfolio.onrender.com"
+    baseURL: "https://beportfolio.onrender.com"
 })
 
 export default api
