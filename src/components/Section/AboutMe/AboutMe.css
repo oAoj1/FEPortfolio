@@ -1,6 +1,6 @@
 .aboutmeContainer{
     width: 100%;
-    background: linear-gradient(to bottom, var(--azulPreto), var(--preto));
+    background-color:var(--branco);
     padding: 10rem 0;
     display: flex;
     flex-direction: column;
@@ -12,13 +12,13 @@
 }
 
 .tituloAboutme h1{
-    font-size: 2.5em;
-    color: var(--branco);
+    font-size: 2.75em;
+    color: var(--preto);
 }
 
 .tituloAboutme h2{
-    font-size: 0.9em;
-    color: var(--cinzaClaro);
+    font-size: 1em;
+    color: var(--azulEscuro);
     font-style: italic;
     font-weight: lighter;
 }
@@ -46,7 +46,7 @@
 .experiencia h2,
 .biografia h2{
     font-size: 1.25em;
-    color: var(--ciano);
+    color: var(--azulPreto);
     font-weight: normal;
 }
 
@@ -55,7 +55,7 @@
     width: 90%;
     font-size: 0.9em;
     margin: 0.5rem 0;
-    color: var(--branco);
+    color: var(--cinzaEscuro);
 }
 
 .segundaDescricao{
@@ -78,7 +78,7 @@
 .interesse h2,
 .trabalhando h2{
     font-size: 1em;
-    color: var(--ciano);
+    color: var(--azulPreto);
 }
 
 .cargo p,
@@ -86,7 +86,7 @@
 .interesse p,
 .trabalhando p{
     font-size: 0.75em;
-    color: var(--branco);
+    color: var(--cinzaEscuro);
     font-weight: lighter;
     font-style: italic;
     margin: 0.25rem 0;

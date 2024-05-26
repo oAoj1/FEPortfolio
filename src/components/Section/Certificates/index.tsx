@@ -48,9 +48,6 @@ export default function Certificates(){
                 ))}
             </ul>
 
-            <div className="circuloContainer">
-                <span className='circulo'></span>
-            </div>
         </div>
     )
 }

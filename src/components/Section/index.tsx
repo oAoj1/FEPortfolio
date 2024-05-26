@@ -34,9 +34,8 @@ export default function Section(){
             <main>
                 <Projects/>
                 <Skill/>
-                {/* 
                 <Certificates/>
-                <AboutMe/> */}
+                <AboutMe/> 
             </main> 
 
         </>

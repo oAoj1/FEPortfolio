@@ -155,6 +155,12 @@
         margin: 3rem 0;
     }
 
+    .projetosBackEnd,
+    .projetosFrontEnd,
+    .projetosOutros{
+        flex-direction: column;
+    }
+
     .listaProjetos li{
         width: 70%;
     }

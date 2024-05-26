@@ -1,17 +1,17 @@
 footer{
     width: 100%;
-    border-top: 1px solid var(--azulEscuro);
-    background-color: var(--preto);
+    border-top: 1px solid var(--preto);
+    background-color: var(--cinza);
     padding: 1rem;
 }
 
 footer h1{
-    font-size: 2em;
-    color: var(--branco);
+    font-size: 2.25em;
+    color: var(--preto);
     font-weight: lighter;
     text-align: center;
 }
 
 footer h1 span{
-    color: var(--ciano);
+    color: var(--azulEscuro);
 }
