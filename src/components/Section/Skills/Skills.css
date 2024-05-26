@@ -1,22 +1,24 @@
 .SkillsContainer{
     width: 100%;
     padding: 10rem 0;
-    background-color: var(--preto);
+    background-color: var(--branco);
     color: var(--branco);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .tituloSkills h1{
     font-size: 3em;
+    text-align: center;
+    color: var(--preto);
 }
 
 .tituloSkills h2{
     font-weight: lighter;
     font-style: italic;
-    color: var(--cinzaClaro);
+    color: var(--preto);
     font-size: 1.1em;
 }
 
@@ -30,15 +32,16 @@
 .soft,
 .hard{
     width: 80%;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     align-items: center;
 }
 
 .soft h2,
 .hard h2{
+    margin: 2rem 0 0 0;
     font-size: 2.5em;
-    color: var(--ciano);
+    color: var(--azul);
 }
 
 .softSkills,
@@ -54,7 +57,8 @@
 .hardSkills li{
     padding: 0.25rem;
     margin: 0.25rem;
-    border: 1px solid var(--cinzaClaro);
+    border: 1px solid var(--preto);
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,12 +68,14 @@
 .hardSkills li h4{
     font-size: 1.25em;
     font-weight: lighter;
+    color: var(--azulPreto);
 }
 
 .softSkills li span svg,
 .hardSkills li span svg{
-    font-size: 1.25em;
+    font-size: 1.75em;
     margin: 0 0.25rem 0 0.5rem;
+    color: var(--preto);
 }
 
 @media screen and (max-width:768px){

@@ -1,27 +1,51 @@
 import './Projects.css'
-import { useState } from 'react'
+
 import axios from 'axios'
 
-import { BiLogoTypescript,BiLogoJavascript  } from "react-icons/bi";
-import { FaJava, FaGithub  } from "react-icons/fa";
-import { CgWebsite } from "react-icons/cg";
+import { useState,useEffect } from 'react'
+
+import Projeto from './Projeto';
 
 export default function Projects(){
 
     const [projects,setProjects] = useState<any>([])
 
-    async function mostrarProjetos(){
-        try{
+    useEffect(() => {
+        async function mostrarProjetos(){
             const response = await axios.get('https://api.github.com/users/oAoj1/repos?visibility=public')
             const data = response.data  
 
             setProjects(data)
-            
-        }catch(error){
-            console.log(error)
+        }           
+        
+        mostrarProjetos()
+    },[])
+
+    const nomesProjetos = projects.map((projetos:any) => projetos)
+
+    console.log(nomesProjetos)
+
+    var projetosFrontEnd: any[] = []
+    var projetosBackEnd: any[] = []
+    var projetosOutros: any[] = []
+
+    for(var i = 0;i < nomesProjetos.length; i++){
+        var duasPrimeirasLetras = nomesProjetos[i].name.slice(0,2) 
+        var cadaProjeto = nomesProjetos[i]
+
+        switch(duasPrimeirasLetras){
+            case 'BE':
+                projetosBackEnd.push(cadaProjeto)
+                break
+            case 'FE':
+                projetosFrontEnd.push(cadaProjeto)
+                break
+            default:
+                projetosOutros.push(cadaProjeto)
+                break
         }
-    }                                                                                                
-    mostrarProjetos()
+
+    }
 
     return(
         <div className="projectsContainer" id='ProjetosSection'>
@@ -31,47 +55,42 @@ export default function Projects(){
             </div>
             
             <ul className='listaProjetos'>
-                {projects.map((projeto: any) =>  
-                    <li key={projeto.id}>
-                        <div className="tituloLI">
-                            <h5>
-                                {projeto.language == 'TypeScript' ? <BiLogoTypescript  title={projeto.language}/> 
-                                :projeto.language == 'JavaScript' ? <BiLogoJavascript title={projeto.language}/>
-                                :projeto.language == 'Java' ? <FaJava title={projeto.language}/> 
-                                :projeto.language}
-                            </h5>
-
-                            <h3>{projeto.name}</h3>
-                            <h4>{projeto.description}</h4>
-                        </div>
+                
+                <h6>BACK-END</h6>
+                <div className="projetosBackEnd">
+                    {projetosBackEnd.map((projeto: any) =>  
+                        <li key={projeto.id}>
+                            <Projeto
+                                projeto={projeto}
+                            />
+                        </li>
                         
-                        <div className="linksLI">
-                            <span>
-                                {projeto.html_url.length > 1 ? 
-                                    <a 
-                                        href={projeto.html_url}
-                                        target='_blank'
-                                        title={`GitHub de ${projeto.name} -> ${projeto.html_url}`}
-                                    >
-                                        <button>GitHub<FaGithub/></button>
-                                    </a>
-                                : ''}
-                            </span>
-                            <span>
-                                {projeto.homepage ? 
-                                    <a 
-                                        href={projeto.homepage}
-                                        target='_blank'
-                                        title={`Pagina de ${projeto.name} -> ${projeto.homepage}`}
-                                    >
-                                        <button>Página <CgWebsite/></button>
-                                    </a> 
-                                : ''}
-                            </span>
-                        </div>
-                    </li>
-                    
-                )}
+                    )}
+                </div>
+
+                <h6>FRONT-END</h6>
+                <div className="projetosFrontEnd">
+                    {projetosFrontEnd.map((projeto: any) =>  
+                        <li key={projeto.id}>
+                            <Projeto
+                                projeto={projeto}
+                            />
+                        </li>
+                        
+                    )}
+                </div>
+
+                <h6>Outro projetos</h6>
+                <div className="projetosOutros">
+                    {projetosOutros.map((projeto: any) =>  
+                        <li key={projeto.id}>
+                            <Projeto
+                                projeto={projeto}
+                            />
+                        </li>
+                        
+                    )}
+                </div>
                 
             </ul>
 
