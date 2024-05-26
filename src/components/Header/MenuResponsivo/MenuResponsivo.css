@@ -5,6 +5,13 @@
     height: 50px;
     cursor: pointer;
     transition: 0.1s;
+}
+
+.menuResponsivoHamburguer{
+    color: var(--preto);
+}
+
+.fecharMenuResponsivoHamburguer{
     color: var(--branco);
 }
 
@@ -14,11 +21,13 @@
     top: 0;
     position: fixed;
     width: 100%;
-    max-width: 35vw;
+    max-width: 50vw;
     height: 100vh;
-    background-color: var(--azulEscuro);
+    background-color: var(--preto);
     z-index: 100;
+    animation: openMenu 0.35s ease-in-out;
 }
+
 
 .overlay{
     background-color: rgba(0,0,0,0.5);
@@ -86,4 +95,26 @@
         display: block;
     }
 
+}
+
+@keyframes openMenu {
+    0%{
+        opacity: 0;
+        transform: translateX(250px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }    
+}
+
+@keyframes closeMenu {
+    0%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(250px);
+    }    
 }

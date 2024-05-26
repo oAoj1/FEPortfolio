@@ -1,5 +1,5 @@
 import './Projects.css'
-import { useEffect,useState } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 
 import { BiLogoTypescript,BiLogoJavascript  } from "react-icons/bi";
@@ -10,22 +10,18 @@ export default function Projects(){
 
     const [projects,setProjects] = useState<any>([])
 
-    useEffect(() => {
-        async function mostrarProjetos(){
-            try{
-                const response = await axios.get('https://api.github.com/users/oAoj1/repos?visibility=public')
-                const data = response.data  
-    
-                setProjects(data)
-                
-            }catch(error){
-                console.log(error)
-            }
-        }                                                                                                
+    async function mostrarProjetos(){
+        try{
+            const response = await axios.get('https://api.github.com/users/oAoj1/repos?visibility=public')
+            const data = response.data  
 
-        mostrarProjetos()
-
-    },[])
+            setProjects(data)
+            
+        }catch(error){
+            console.log(error)
+        }
+    }                                                                                                
+    mostrarProjetos()
 
     return(
         <div className="projectsContainer" id='ProjetosSection'>
@@ -38,14 +34,15 @@ export default function Projects(){
                 {projects.map((projeto: any) =>  
                     <li key={projeto.id}>
                         <div className="tituloLI">
-                            <h3>{projeto.name}</h3>
-                            <h4>{projeto.description}</h4>
                             <h5>
                                 {projeto.language == 'TypeScript' ? <BiLogoTypescript  title={projeto.language}/> 
                                 :projeto.language == 'JavaScript' ? <BiLogoJavascript title={projeto.language}/>
                                 :projeto.language == 'Java' ? <FaJava title={projeto.language}/> 
                                 :projeto.language}
                             </h5>
+
+                            <h3>{projeto.name}</h3>
+                            <h4>{projeto.description}</h4>
                         </div>
                         
                         <div className="linksLI">
@@ -56,7 +53,7 @@ export default function Projects(){
                                         target='_blank'
                                         title={`GitHub de ${projeto.name} -> ${projeto.html_url}`}
                                     >
-                                        <FaGithub/> 
+                                        <button>GitHub<FaGithub/></button>
                                     </a>
                                 : ''}
                             </span>
@@ -67,7 +64,7 @@ export default function Projects(){
                                         target='_blank'
                                         title={`Pagina de ${projeto.name} -> ${projeto.homepage}`}
                                     >
-                                        <CgWebsite/> 
+                                        <button>Página <CgWebsite/></button>
                                     </a> 
                                 : ''}
                             </span>

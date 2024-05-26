@@ -7,7 +7,8 @@ export default function PaginaPrincipal(){
         <>
             <Header/>
             <Section/>
-            <Footer/>
+            {/* 
+            <Footer/> */}
         </>
     )
 }

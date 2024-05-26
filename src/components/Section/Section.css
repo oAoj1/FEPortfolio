@@ -1,6 +1,6 @@
 section{
     width: 100%;
-    background: linear-gradient(to top, var(--azulPreto), var(--preto));
+    background-color: var(--branco);
     padding: 10rem 0 2rem 0;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@ section{
 .tituloSection h1{
     font-family: 'Gilroy-Light';
     font-size: 2.75rem;
-    color:var(--branco);  
+    color:var(--preto);  
     font-weight: lighter;  
     text-transform: capitalize;
 }
@@ -22,6 +22,7 @@ section{
 .tituloSection h1 span:nth-of-type(2) i{
     font-style: normal;
     color: var(--ciano);
+    font-weight: bold;
 }
 
 .tituloSection h1 span:nth-of-type(3){
@@ -31,9 +32,10 @@ section{
 .tituloSection h2{
     margin:1.5rem 0;
     font-size: 1.1rem;
-    color: var(--cinzaClaro);
+    color: var(--cinzaEscuro);
     font-family: 'Gilroy-Light';
     font-weight: lighter;
+    font-style: italic;
 }
 
 .tituloSection button{
@@ -42,21 +44,21 @@ section{
     cursor: pointer;
     font-size: 1.5em;
     transition: 0.2s ease;
-    border: 1px solid var(--branco);
-    background-color: var(--ciano);
+    border: 1px solid var(--preto);
+    background-color: #fff;
     color: var(--preto);
+    outline: 0;
 }
 
 .tituloSection button:hover{
-    background-color: var(--cianoEscuro);
+    background-color: var(--cinzaClaro);
 }
 
 .tituloSection button:active{
-    transition: 0.1ms;
-    background-color: var(--preto);
-    color: var(--ciano);
-    border: 1px solid var(--ciano);
-    transform: scale(0.95);
+    transition: 0.15ms;
+    background-color: var(--cinza);
+    color: #fff;
+    border: 1px solid var(--preto);
 }
 
 .circulo{
@@ -65,7 +67,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 225, 255, 0.5);
+    background-color: rgba(10, 102, 194, 0.5);
     clip-path: circle(500px at right 100px);
     z-index: 1;
 }

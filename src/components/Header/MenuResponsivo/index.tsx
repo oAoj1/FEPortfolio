@@ -40,7 +40,8 @@ export default function MenuResponsivo(){
                         onClick={() => setIsOpen(!isOpen)}
                     >
                     </div>
-                    <aside className='menuResponsivo'>
+                    <aside 
+                    className='menuResponsivo'>
                         <div className="fecharMenuResponsivo">
                             <MdClose 
                                 onClick={() => setIsOpen(false)} 

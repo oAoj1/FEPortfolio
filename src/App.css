@@ -25,12 +25,15 @@
 :root{
   --ciano:#01ffff;
   --cianoEscuro:#02b3b3;
+
   --azul:#0a66c2;
   --azulEscuro:#0d2173;
-  
   --azulPreto:#070024;
-  --preto:#02000a;
+
   --cinzaEscuro:#2d2c2e;
+  --cinza:#919090;
   --cinzaClaro:#cccc;
+
+  --preto:#02000a;
   --branco:#e0dede;
 }
