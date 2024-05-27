@@ -93,6 +93,11 @@
 }
 
 @media screen and (max-width:768px){
+    .tituloAboutme,
+    .listaAboutme{
+        width: 85%;
+    }
+
     .primeiraDescricao,
     .segundaDescricao{
         width: 100%;
@@ -106,4 +111,5 @@
     .trabalhando{
         width: 100%;
     }
+
 }
