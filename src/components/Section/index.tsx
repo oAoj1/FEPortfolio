@@ -5,8 +5,9 @@ import Skill from './Skills'
 import Certificates from './Certificates'
 import AboutMe from './AboutMe'
 
-export default function Section(){
+import { FaGithub, FaLinkedin  } from "react-icons/fa"
 
+export default function Section(){
     return(
         <>
             <section id='HomeSection'> 
@@ -19,11 +20,14 @@ export default function Section(){
 
                     <h2>Conheça mais sobre minha pessoa e minha carreira</h2>
 
-                    <button 
-                        onClick={() => document.getElementById('SobreMimSection')?.scrollIntoView({behavior:'smooth'})}
-                    >
-                        Sobre mim
-                    </button>
+                    <div className="socialMediasSection">
+                        <a href="https://github.com/oAoj1" target="_blank" rel="noopener noreferrer">
+                            <FaGithub/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joaomarques711/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin/>
+                        </a>
+                    </div>
                 </div> 
                  
                 <div className="circuloSection">

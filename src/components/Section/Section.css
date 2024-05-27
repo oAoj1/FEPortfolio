@@ -38,16 +38,18 @@ section{
     font-style: italic;
 }
 
-.tituloSection button{
-    font-family: 'Gilroy-Medium';
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-    font-size: 1.5em;
-    transition: 0.2s ease;
-    border: 1px solid var(--preto);
-    background-color: #fff;
-    color: var(--preto);
-    outline: 0;
+.tituloSection .socialMediasSection{
+    display: flex;
+    align-items: center;
+}
+
+.tituloSection .socialMediasSection a{
+    color: var(--azulEscuro);
+}
+
+.tituloSection .socialMediasSection a svg{
+    font-size: 2em;
+    margin: 0 0.5rem 0 0;
 }
 
 .tituloSection button:hover{

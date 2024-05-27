@@ -3,6 +3,16 @@ footer{
     border-top: 1px solid var(--preto);
     background-color: var(--cinza);
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer button{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
 }
 
 footer h1{
@@ -13,5 +23,19 @@ footer h1{
 }
 
 footer h1 span{
-    color: var(--azulEscuro);
+    color: var(--branco);
+}
+
+footer .socialMediasFooter{
+    display: flex;
+    align-items: center;
+}
+
+footer .socialMediasFooter a{
+    color: var(--preto);
+}
+
+footer .socialMediasFooter a svg{
+    font-size: 2em;
+    margin: 0 0.5rem 0 0;
 }
