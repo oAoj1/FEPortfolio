@@ -23,8 +23,6 @@ export default function Projects(){
 
     const nomesProjetos = projects.map((projetos:any) => projetos)
 
-    console.log(nomesProjetos)
-
     var projetosFrontEnd: any[] = []
     var projetosBackEnd: any[] = []
     var projetosOutros: any[] = []

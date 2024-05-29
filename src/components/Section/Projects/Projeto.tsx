@@ -1,51 +1,10 @@
 import './Projects.css'
 
-import axios from 'axios'
-
-import { useState,useEffect } from 'react'
-
 import { BiLogoTypescript,BiLogoJavascript  } from "react-icons/bi";
 import { FaJava, FaGithub  } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 
 export default function Projeto(props:any){
-
-    const [projects,setProjects] = useState<any>([])
-
-    useEffect(() => {
-        async function mostrarProjetos(){
-            const response = await axios.get('https://api.github.com/users/oAoj1/repos?visibility=public')
-            const data = response.data  
-
-            setProjects(data)
-        }           
-        
-        mostrarProjetos()
-    },[])
-
-    const nomesProjetos = projects.map((projetos:any) => projetos.name)
-
-    var projetosFrontEnd = []
-    var projetosBackEnd = []
-    var projetosOutros = []
-
-    for(var i = 0;i < nomesProjetos.length; i++){
-        var duasPrimeirasLetras = nomesProjetos[i].slice(0,2) 
-        var cadaProjeto = nomesProjetos[i]
-
-        switch(duasPrimeirasLetras){
-            case 'BE':
-                projetosBackEnd.push(cadaProjeto)
-                break
-            case 'FE':
-                projetosFrontEnd.push(cadaProjeto)
-                break
-            default:
-                projetosOutros.push(cadaProjeto)
-                break
-        }
-
-    }
 
     return(
         <>
