@@ -8,6 +8,7 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaPython, FaJava, } from "react-
 import { SiMongodb, SiTypescript  } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandReactNative } from "react-icons/tb";
+import { SiKotlin } from "react-icons/si";
 
 /* soft logos */
 import { RiEmpathizeFill } from "react-icons/ri";
@@ -96,7 +97,8 @@ export default function Skill(){
                                     : hard.habilidade == 'Java' ? <FaJava/>
                                     : hard.habilidade == 'MySql' ? <GrMysql/>
                                     : hard.habilidade == 'React Native' ? <TbBrandReactNative/>
-                                    : ''
+                                    : hard.habilidade == 'Kotlin' ? <SiKotlin/> :
+                                    ''
                                     }
                                 </span>
                             </li>

@@ -15,10 +15,10 @@ export default function Section(){
                     <h1> 
                         <span>Olá,</span> <br /> 
                         <span>eu sou <i>João</i>,</span> <br /> 
-                        <span>desenvolvedor front-end</span>
+                        <span>desenvolvedor mobile</span>
                     </h1>
 
-                    <h2>Conheça mais sobre minha pessoa e minha carreira</h2>
+                    <h2>Conheça mais sobre minha pessoa e meus feitos no mundo do desenvolvimento de software!</h2>
 
                     <div className="socialMediasSection">
                         <a href="https://github.com/oAoj1" target="_blank" rel="noopener noreferrer">

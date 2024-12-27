@@ -21,15 +21,12 @@ section{
 
 .tituloSection h1 span:nth-of-type(2) i{
     font-style: normal;
-    color: var(--ciano);
+    color: var(--azulEscuro);
     font-weight: bold;
 }
 
-.tituloSection h1 span:nth-of-type(3){
-    font-family: 'Gilroy-Medium';
-}
-
 .tituloSection h2{
+    width: 70%;
     margin:1.5rem 0;
     font-size: 1.1rem;
     color: var(--cinzaEscuro);
